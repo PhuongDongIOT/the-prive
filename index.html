@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div id="fullpage">
-        <div class="section carousel">
+    <main>
+        <div id="section-0" class="section carousel">
 
             <div class="list">
 
@@ -161,7 +161,7 @@
 
         </div>
 
-        <div class="section fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
+        <div id="section-1" class="section fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
             <div class="property-card" data-aos="fade-up">
                 <h2 class="property-title">TỔNG QUAN</h2>
                 <ul class="property-info">
@@ -181,7 +181,7 @@
                 alt="Girl in a jacket">
         </div>
 
-        <div class="section w-full fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
+        <div id="section-2" class="section w-full fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
             <div class="property-card" data-aos="fade-up">
                 <h2 class="property-title">TỔNG QUAN</h2>
                 <ul class="property-info">
@@ -197,14 +197,14 @@
             </iframe>
         </div>
 
-        <div class="section w-full fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
+        <div id="section-3" class="section w-full fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
             <div class="span-center">
                 <img class="img-center" src="./image/mat-bang.png" alt="Girl in a jacket">
             </div>
         </div>
 
         <!-- Swiper -->
-        <div class="section swiper mySwiper">
+        <div id="section-4" class="section swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="./image/Phoi-canh-song-nuoc-ben-the-prive.jpg" alt="Ảnh 1" />
@@ -233,7 +233,7 @@
             </div>
         </div>
 
-        <div class="section fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
+        <div id="section-5" class="section fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
             <div class="block-center">
                 <div class="news-block">
                     <div class="span-center w-full">
@@ -266,7 +266,7 @@
         </div>
 
 
-        <div class="section fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
+        <div id="section-6" class="section fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
             <div class="block-center">
                 <div class="news-block">
                     <div class="span-center w-full">
@@ -299,7 +299,7 @@
         </div>
 
 
-        <div class="section fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
+        <div id="section-7" class="section fullscreen-bg" style="background-image: url(image/pexels-apasaric-325185.jpg);">
             <div class="property-card left-10" data-aos="fade-up">
                 <h2 class="property-title">LIÊN HỆ</h2>
                 <ul class="property-info">
@@ -327,22 +327,31 @@
         </div>
 
 
-    </div>
+    </main>
     <div id="custom-dots">
-        <div class="dot active" data-index="0"><span>1</span></div>
-        <div class="dot" data-index="1"><span>2</span></div>
-        <div class="dot" data-index="2"><span>3</span></div>
-        <div class="dot" data-index="3"><span>4</span></div>
-        <div class="dot" data-index="4"><span>5</span></div>
-        <div class="dot" data-index="5"><span>6</span></div>
-        <div class="dot" data-index="6"><span>7</span></div>
-        <div class="dot" data-index="7"><span>8</span></div>
+        <div class="dot active" data-index="0"><span>1</span>
+            <p class="text-dot">Giới thiệu</p>
+            </div>
+        <div class="dot" data-index="1"><span>2</span>
+            <p class="text-dot">Giới thiệu</p></div>
+        <div class="dot" data-index="2"><span>3</span>
+            <p class="text-dot">Giới thiệu</p></div>
+        <div class="dot" data-index="3"><span>4</span>
+            <p class="text-dot">Giới thiệu</p></div>
+        <div class="dot" data-index="4"><span>5</span>
+            <p class="text-dot">Giới thiệu</p></div>
+        <div class="dot" data-index="5"><span>6</span>
+            <p class="text-dot">Giới thiệu</p></div>
+        <div class="dot" data-index="6"><span>7</span>
+            <p class="text-dot">Giới thiệu</p></div>
+        <div class="dot" data-index="7"><span>8</span>
+            <p class="text-dot">Giới thiệu</p></div>
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- FullPage.js JS -->
-    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -389,7 +398,48 @@
             speed: 1000,
         });
     </script>
-    <script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const dots = document.querySelectorAll('#custom-dots .dot');
+        const sections = [];
+    
+        dots.forEach(dot => {
+            const index = dot.getAttribute('data-index');
+            const section = document.querySelector(`#section-${index}`);
+            if (section) {
+                sections.push({ index, element: section });
+    
+                // Scroll đến section khi click
+                dot.addEventListener('click', () => {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        });
+    
+        // Auto-active dot khi scroll
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id.split('-')[1];
+                        dots.forEach(dot => dot.classList.remove('active'));
+                        const activeDot = document.querySelector(`.dot[data-index="${id}"]`);
+                        if (activeDot) {
+                            activeDot.classList.add('active');
+                        }
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+    
+        sections.forEach(({ element }) => {
+            observer.observe(element);
+        });
+    });
+    </script>
+    
+    <!-- <script>
         new fullpage('#fullpage', {
             anchors: ['1', '3', '3', '4', '5', '6', '7', '8'],
             autoScrolling: true,
@@ -417,7 +467,7 @@
             });
             document.querySelector(`.dot[data-index="${index}"]`).classList.add('active');
         }
-    </script>
+    </script> -->
     <script src="app.js"></script>
 </body>
 

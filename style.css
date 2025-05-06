@@ -426,9 +426,10 @@
     .property-card {
         position: relative;
         max-width: 90vw;
-        margin-left: 0;
-        margin-bottom: 20px;
-        left: 5%;
+        /* left: 5%; */
+        left: auto;
+        margin: auto;
+        margin-bottom: 10px;
     }
 
     .property-image {
@@ -711,6 +712,10 @@ z .news-caption:hover {
         left: auto;
     }
 
+    .block-center .news-card:nth-of-type(3) {
+        display: none !important;
+    }
+
 }
 
 #fp-nav {
@@ -726,9 +731,10 @@ z .news-caption:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
-  
-  .dot {
+}
+
+.dot {
+    position: relative;
     width: 30px;
     height: 30px;
     background: #ddd;
@@ -740,9 +746,27 @@ z .news-caption:hover {
     color: #333;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-  }
-  
-  .dot.active {
+}
+
+.dot.active {
     background: #000;
     color: #fff;
-  }
+}
+
+.text-dot {
+    position: absolute;
+    z-index: 10;
+    width: 80px;
+    top: 0;
+    left: -60px;
+    color: #fff;
+    display: none;
+    height: 30px;
+    margin: auto;
+    font-weight: 600;
+}
+
+.active .text-dot {
+    display: flex;
+    align-items: center;
+}
