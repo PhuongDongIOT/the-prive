@@ -1233,8 +1233,11 @@ button[type="submit"]:hover {
 .faq-section h3 {
     text-align: center;
     margin-bottom: 30px;
-    color: #0056b3;
     font-size: 2em;
+    background-image: linear-gradient(180deg, #FEC853 0%, #DA8B2A 50%, #F89625 86%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .faq-list {
@@ -1313,7 +1316,7 @@ button[type="submit"]:hover {
         padding: 15px;
     }
 
-    .faq-section h2 {
+    .faq-section h3 {
         font-size: 1.6em;
         margin-bottom: 20px;
     }
