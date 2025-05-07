@@ -707,6 +707,19 @@ z .news-caption:hover {
 
 }
 
+@media screen and (max-width: 450px) {
+
+    .news-card {
+        position: relative;
+        width: 40%;
+    }
+
+    .news-card img {
+        height: 120px;
+    }
+
+}
+
 .left-10 {
     left: 10%;
     right: auto;
