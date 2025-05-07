@@ -232,8 +232,6 @@
       }
       </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- FullPage.js CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css" />
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -896,9 +894,6 @@
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- FullPage.js JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -986,35 +981,6 @@
         });
     </script>
 
-    <!-- <script>
-        new fullpage('#fullpage', {
-            anchors: ['1', '3', '3', '4', '5', '6', '7', '8'],
-            autoScrolling: true,
-            scrollHorizontally: true,
-            horizontal: true,
-            navigation: true,
-            loopTop: true,
-            loopBottom: true,
-            loopHorizontal: true,
-            afterLoad: function (origin, destination, direction) {
-                setActiveDot(destination.index);
-            }
-        });
-
-        document.querySelectorAll('.dot').forEach(dot => {
-            dot.addEventListener('click', () => {
-                const index = parseInt(dot.getAttribute('data-index'));
-                fullpage_api.moveTo(index + 1);
-            });
-        });
-
-        function setActiveDot(index) {
-            document.querySelectorAll('.dot').forEach(dot => {
-                dot.classList.remove('active');
-            });
-            document.querySelector(`.dot[data-index="${index}"]`).classList.add('active');
-        }
-    </script> -->
     <script src="app.js"></script>
 </body>
 

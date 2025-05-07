@@ -1197,3 +1197,9 @@ button[type="submit"]:hover {
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 669px) {
+    .h-110 {
+        height: auto;
+    }
+}
