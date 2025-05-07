@@ -1021,6 +1021,7 @@ z .news-caption:hover {
 .h-110 {
     height: 110vh;
 }
+
 .booking-contact-block {
     margin: auto;
     display: flex;
@@ -1161,7 +1162,8 @@ button[type="submit"]:hover {
         min-height: auto;
     }
 
-    .booking-info-section, .contact-form-section {
+    .booking-info-section,
+    .contact-form-section {
         flex: none;
         width: 100%;
         padding: 30px;
@@ -1201,5 +1203,120 @@ button[type="submit"]:hover {
 @media (max-width: 669px) {
     .h-110 {
         height: auto;
+    }
+}
+
+.faq-section {
+    width: 90vw;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.faq-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0056b3;
+    font-size: 2em;
+}
+
+.faq-list {
+    border-top: 1px solid #eee;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding: 0;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary {
+    display: block;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    position: relative;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.faq-item summary:hover {
+    color: #007bff;
+}
+
+.faq-item summary .icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary .icon {
+    transform: translateY(-50%) rotate(45deg);
+    border-right-color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+.faq-answer {
+    padding: 10px 20px 20px 20px;
+    border-top: 1px dashed #eee;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.faq-item:not([open]) .faq-answer {
+    display: none;
+}
+
+.faq-answer p {
+    margin: 0 0 10px 0;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .faq-section h2 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+
+    .faq-item summary {
+        font-size: 1em;
+        padding: 12px 15px;
+        padding-right: 35px;
+    }
+
+    .faq-item summary .icon {
+        right: 15px;
+    }
+
+    .faq-answer {
+        padding: 8px 15px 15px 15px;
+        font-size: 0.95em;
     }
 }
