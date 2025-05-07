@@ -1186,9 +1186,9 @@ button[type="submit"]:hover {
         margin-top: 15px;
     }
 
-    .contact-form-section {
+    /* .contact-form-section {
         background-color: rgba(255, 255, 255, 0.98);
-    }
+    } */
 
     .form-container h3 {
         font-size: 1.4em;
